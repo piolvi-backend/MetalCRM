@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: metalcrm-db
+    environment:
+      POSTGRES_USER: metalcrm_dev
+      POSTGRES_PASSWORD: metalcrm_dev_pass
+      POSTGRES_DB: metalcrm_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    
+  api:
+    build:
+      context: .
+      dockerfile: src/Backend/MetalCRM.API/Dockerfile
+    container_name: metalcrm-api
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=metalcrm_db;Username=metalcrm_dev;Password=metalcrm_dev_pass
+    depends_on:
+      - db
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
