@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetalCRM.API", "src\Backend\MetalCRM.API\MetalCRM.API.csproj", "{3156AE10-C8BA-4A21-90C4-4900C3A96533}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A30623BE-0C3B-43AD-BD49-3009733FF26B}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetalCRM.Application", "src\Backend\MetalCRM.Application\MetalCRM.Application.csproj", "{939142DD-CA12-48B9-860B-ABDAEA0BE0ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetalCRM.Domain", "src\Backend\MetalCRM.Domain\MetalCRM.Domain.csproj", "{35E14B0A-F5E2-4023-ACFC-DB9126361905}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetalCRM.Infrastructure", "src\Backend\MetalCRM.Infrastructure\MetalCRM.Infrastructure.csproj", "{D6B2C325-A5DF-495A-B36E-2BA521BAB167}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3156AE10-C8BA-4A21-90C4-4900C3A96533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3156AE10-C8BA-4A21-90C4-4900C3A96533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3156AE10-C8BA-4A21-90C4-4900C3A96533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3156AE10-C8BA-4A21-90C4-4900C3A96533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939142DD-CA12-48B9-860B-ABDAEA0BE0ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939142DD-CA12-48B9-860B-ABDAEA0BE0ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939142DD-CA12-48B9-860B-ABDAEA0BE0ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939142DD-CA12-48B9-860B-ABDAEA0BE0ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E14B0A-F5E2-4023-ACFC-DB9126361905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E14B0A-F5E2-4023-ACFC-DB9126361905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E14B0A-F5E2-4023-ACFC-DB9126361905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E14B0A-F5E2-4023-ACFC-DB9126361905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6B2C325-A5DF-495A-B36E-2BA521BAB167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6B2C325-A5DF-495A-B36E-2BA521BAB167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6B2C325-A5DF-495A-B36E-2BA521BAB167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6B2C325-A5DF-495A-B36E-2BA521BAB167}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

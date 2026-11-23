@@ -1,0 +1,6 @@
+@MetalCRM.API_HostAddress = http://localhost:5231
+
+GET {{MetalCRM.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

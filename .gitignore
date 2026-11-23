@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+.vs
+*.user
+
+# JetBrains Rider / ReSharper
+.idea/
+*.sln.iml
+*.DotSettings.user
+_ReSharper*/
+*.[Rr]e[Ss]harper
